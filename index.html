@@ -5,50 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кирилл Рыхликов | Портфолио</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <h1>Кирилл Рыхликов</h1>
-    <nav>
-        <a href="#about">О себе</a>
-        <a href="#projects">Проекты</a>
-        <a href="#contacts">Контакты</a>
-    </nav>
+    <div class="container header-container">
+        <h1>Кирилл Рыхликов</h1>
+        <nav>
+            <a href="#about">О себе</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
 </header>
 
-<section id="about">
-    <h2>О себе</h2>
-    <p>Привет, я Java Backend разработчик.<br>
-        Создаю современные приложения и бэкенд-сервисы.</p>
-    <a href="resume.pdf" download>Скачать резюме</a>
+<section id="about" class="section">
+    <div class="container">
+        <h2>О себе</h2>
+        <p>Привет, я Java Backend разработчик.<br>
+            Создаю современные приложения и бэкенд-сервисы.</p>
+        <a class="btn" href="resume.pdf" download>Скачать резюме</a>
+    </div>
 </section>
 
-<section id="projects">
-    <h2>Проекты</h2>
-    <div class="projects-container">
-        <div class="project-card">
-            <h3>Проект 1</h3>
-            <p>Описание проекта, технологии и функционал.</p>
-            <a href="#">Смотреть проект</a>
-        </div>
-        <div class="project-card">
-            <h3>Проект 2</h3>
-            <p>Описание проекта, технологии и функционал.</p>
-            <a href="#">Смотреть проект</a>
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Проекты</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Проект 1</h3>
+                <p>Описание проекта, технологии и функционал.</p>
+                <a class="btn" href="#">Смотреть проект</a>
+            </div>
+            <div class="project-card">
+                <h3>Проект 2</h3>
+                <p>Описание проекта, технологии и функционал.</p>
+                <a class="btn" href="#">Смотреть проект</a>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="contacts">
-    <h2>Контакты</h2>
-    <p>Email: <a href="mailto:kapyctarylit@mail.ru">kapyctarylit@mail.ru</a></p>
-    <p>Telegram: <a href="https://t.me/nineteenmg">@nineteenmg</a></p>
-    <p>GitHub: <a href="https://github.com/nineteenmg">nineteenmg</a></p>
+<section id="contacts" class="section">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:kapyctarylit@mail.ru">kapyctarylit@mail.ru</a></p>
+        <p>Telegram: <a href="https://t.me/nineteenmg">@nineteenmg</a></p>
+        <p>GitHub: <a href="https://github.com/nineteenmg">nineteenmg</a></p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2025 Кирилл Рыхликов. Все права защищены.</p>
+    <div class="container footer-container">
+        <p>© 2025 Кирилл Рыхликов. Все права защищены.</p>
+        <div class="socials">
+            <a href="https://github.com/nineteenmg" target="_blank">GitHub</a>
+            <a href="https://t.me/nineteenmg" target="_blank">Telegram</a>
+        </div>
+    </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
