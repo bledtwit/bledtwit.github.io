@@ -1,130 +1,106 @@
-/* Основные шрифты и сброс */
+/* Базовые стили */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(120deg, #f5f7fa, #e4ebf5);
+    background: linear-gradient(135deg, #0077cc, #00c3ff);
     color: #333;
-    scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 15px;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Header */
 header {
-    background-color: #0077cc;
+    background-color: rgba(0, 119, 204, 0.9);
     color: #fff;
-    padding: 25px 0;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.2em;
+    letter-spacing: 1px;
 }
 
 nav a {
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #ffdd57;
 }
 
-/* Sections */
-.section {
-    padding: 60px 0;
+/* Секции */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2em;
+/* Кнопка резюме */
+.download-resume {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-/* Projects */
+.download-resume:hover {
+    background-color: #ff6347;
+    transform: translateY(-2px);
+}
+
+/* Проекты */
 .projects-container {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .project-card {
-    background-color: #fff;
+    background: #fff;
     padding: 25px;
     flex: 1 1 300px;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    background-color: #0077cc;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
+/* Контакты */
+#contacts p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+#contacts a {
+    color: #0077cc;
     text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
 }
 
-.btn:hover {
-    background-color: #005fa3;
-    transform: translateY(-2px);
+#contacts a:hover {
+    text-decoration: underline;
 }
 
-/* Footer */
+/* Футер */
 footer {
-    background-color: #0077cc;
-    color: #fff;
-    padding: 30px 0;
     text-align: center;
-}
-
-footer .socials a {
-    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(0, 119, 204, 0.9);
     color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-footer .socials a:hover {
-    color: #ffcc00;
-}
-
-/* Fade-in effect for sections */
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
