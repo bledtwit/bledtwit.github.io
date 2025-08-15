@@ -3,77 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кирилл Рыхликов | Java Backend</title>
+    <title>Портфолио bledtwit</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <h1>Кирилл Рыхликов</h1>
-    <h2>Java Junior Backend Developer</h2>
-    <p>📞 +7 920 244 01 91 | ✉ kapyctarylit@mail.ru | § bledtwit</p>
+    <div class="container">
+        <h1>bledtwit</h1>
+        <nav>
+            <a href="#about">О себе</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contact">Контакты</a>
+            <a href="https://t.me/nineteenmgbot" target="_blank" class="bot-link">Бот</a>
+        </nav>
+    </div>
 </header>
 
-<section id="about">
-    <h3>О себе</h3>
-    <p>Junior Java Backend разработчик с опытом создания REST API и CRUD-приложений на базе Spring Boot и PostgreSQL. Фокус — на логике серверной части, архитектуре и практическом применении Java-стека.</p>
+<section id="hero" data-aos="fade-up">
+    <div class="container">
+        <h2>Привет, я Java Backend разработчик</h2>
+        <p>Создаю современные приложения и бэкенд-сервисы.</p>
+        <a href="resume.pdf" class="btn">Скачать резюме</a>
+    </div>
 </section>
 
-<section id="skills">
-    <h3>Навыки</h3>
-    <div class="skill-group">
-        <h4>Языки</h4>
-        <p>Java 8+</p>
-    </div>
-    <div class="skill-group">
-        <h4>Фреймворки</h4>
-        <p>Spring Boot, Hibernate (JPA), JUnit</p>
-    </div>
-    <div class="skill-group">
-        <h4>Инструменты</h4>
-        <p>Git, Docker, Maven, Gradle, Linux</p>
-    </div>
-    <div class="skill-group">
-        <h4>Базы данных</h4>
-        <p>PostgreSQL, H2</p>
+<section id="about" data-aos="fade-up">
+    <div class="container">
+        <h2>О себе</h2>
+        <p>Опыт в Java, Spring Boot, REST API, базы данных PostgreSQL, Docker. Люблю писать чистый код и создавать удобные приложения.</p>
     </div>
 </section>
 
 <section id="projects">
-    <h3>Проекты</h3>
-    <ul>
-        <li>
-            <strong>Mini Shop</strong> — CRUD API на Spring Boot, PostgreSQL, JPA, слоистая архитектура.<br>
-            <a href="https://github.com/bledtwit/mini-shop" target="_blank">Код на GitHub</a>
-        </li>
-        <li>
-            <strong>Request</strong> — обработчик HTTP-запросов (GET/POST), DTO, JSON Handler, репозитории, H2.<br>
-            <a href="https://github.com/bledtwit/Backend" target="_blank">Код на GitHub</a>
-        </li>
-    </ul>
+    <div class="container">
+        <h2 data-aos="fade-up">Проекты</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Проект 1</h3>
+                <p>Описание проекта, технологии и функционал.</p>
+                <a href="#" target="_blank">Смотреть проект</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>Проект 2</h3>
+                <p>Описание проекта, технологии и функционал.</p>
+                <a href="#" target="_blank">Смотреть проект</a>
+            </div>
+            <!-- Добавь еще проекты -->
+        </div>
+    </div>
 </section>
 
-<section id="bot">
-    <h3>Личный бот</h3>
-    <p>Мой Telegram-бот:
-        <a href="https://t.me/nineteenmgbot" target="_blank">@nineteenmgbot</a>
-    </p>
-</section>
-
-<section id="hackathons">
-    <h3>Хакатоны</h3>
-    <p>2025 — Участник Code-Battle @ YoungCon</p>
-</section>
-
-<section id="education">
-    <h3>Образование</h3>
-    <p>2022–2026 — Бакалавриат, РосБиоТех, Москва<br>
-        Ожидаемое окончание — июнь 2026</p>
+<section id="contact" data-aos="fade-up">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:bledtwit@gmail.com">bledtwit@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/bledtwit" target="_blank">bledtwit</a></p>
+        <p>Telegram бот: <a href="https://t.me/nineteenmgbot" target="_blank">@nineteenmgbot</a></p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2025 Кирилл Рыхликов</p>
+    <div class="container">
+        <p>&copy; 2025 bledtwit. Все права защищены.</p>
+    </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000 });
+</script>
 </body>
 </html>
